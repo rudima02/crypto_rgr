@@ -1,7 +1,16 @@
 #include "menu.h"
+#include "locale"
 #include <iostream>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 int main() {
+#ifdef _WIN32
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+#endif
     while (true) {
         std::cout << "\nГлавное меню\n"
                   << "1. Ввод текста в файл\n"

@@ -60,11 +60,11 @@ void process_encrypt_decrypt(bool encrypt_mode) {
     std::string libname;
 
     if (choice == 1)
-        libname = "libfixed_perm" LIB_EXT;
+        libname = "libs/libfixed_perm" LIB_EXT;
     else if (choice == 2)
-        libname = "libkeyword_table" LIB_EXT;
+        libname = "libs/libkeyword_table" LIB_EXT;
     else
-        libname = "libmagic_square" LIB_EXT;
+        libname = "libs/libmagic_square" LIB_EXT;
 
     LIB_HANDLE handle = LOAD_LIB(libname.c_str());
 

@@ -1,5 +1,3 @@
 g++ -std=c++17 main/main.cpp main/menu.cpp main/file_io.cpp \
     -I./src -I./main \
-    -L. -lfixed_perm -lkeyword_table -lmagic_square \
-    -ldl \
-    -o crypto_app
+    -ldl -o crypto_app
